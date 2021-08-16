@@ -1,0 +1,68 @@
+.weather-form {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+}
+.weather-form__btn {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 0 0 5px black;
+  height: 40px;
+  width: 48px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.weather-form__btn:hover {
+  background: #e6e6e62b;
+  transform: scale(0.95);
+  box-shadow: 0 0 2px black;
+}
+.wheather-form__input {
+  border: 1px solid black;
+  box-shadow: 0 0 5px black;
+  outline: none;
+  padding: 0.2em 1em;
+  border-radius: 24px;
+  height: 30px;
+  width: 100%;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  transition: all 0.2s;
+}
+.wheather-form__input::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+.wheather-form__input:focus {
+  background: #e6e6e62b;
+  border: 1px solid #fff;
+  box-shadow: none;
+}
+
+@media (orientation: landscape) {
+  .wheather-form__input {
+    height: 28px;
+  }
+  .wheather-form__btn {
+    height: 28px;
+    width: 35px;
+  }
+}
+@media (min-width: 800px) {
+  .weather-form__btn {
+    border: none;
+    box-shadow: none;
+  }
+
+  .wheather-form__input {
+    border: none;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,34 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+body {
+  background-image: linear-gradient(rgb(236, 233, 233), rgb(165, 158, 158));
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (min-width: 640px and landscape) {
+  body {
+    background-image: url("https://source.unsplash.com/1200x600/?landscape");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (min-width: 800px) {
+  body {
+    background: #222;
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 120%;
+  }
+}

@@ -1,0 +1,94 @@
+.data {
+  display: block;
+  position: relative;
+}
+.weather-result__title {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.wheather-result__weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 20px 20px;
+  padding: 0;
+  text-align: center;
+}
+.wheather-result__icon {
+  height: 100px;
+  width: 100px;
+  margin: -10px auto 0;
+}
+.wheather-result__temp {
+  margin: 0 0 0 10px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.weather-result__sky-description {
+  margin: -20px 0 0 0;
+}
+.wheather-result__humidity,
+.wheather-result__wind {
+  margin: 5px 10px;
+}
+.wheather-result__actualization {
+  position: absolute;
+  font-size: 12px;
+  bottom: 10px;
+  right: 20px;
+}
+.weather-result__sun {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0 0;
+}
+.sun-rise__picture,
+.sun-set__picture {
+  background-color: #fff;
+  margin: 0 10px;
+  width: 32px;
+}
+
+@media (orientation: landscape) {
+  .wheather-result__weather {
+    margin: 0 20px 10px 20px;
+  }
+  .wheather-result {
+    margin-top: -10px;
+  }
+  .wheather-result__icon {
+    height: 80px;
+    width: 80px;
+  }
+  .wheather-result__temp {
+    font-size: 30px;
+  }
+  .weather-result__sun {
+    margin: 10px 0 0;
+  }
+  .sun-rise__picture,
+  .sun-set__picture {
+    width: 20px;
+  }
+}
+@media (min-width: 800px) {
+  .weather-result__title {
+    text-align: start;
+  }
+  .wheather-result__temp {
+    font-size: 40px;
+  }
+  .wheather-result__weather {
+    margin: 0 10px 10px 0;
+  }
+
+  .wheather-result__humidity,
+  .wheather-result__wind {
+    margin: 5px 0;
+  }
+
+  .weather-result__sun {
+    margin: 20px 0 0;
+  }
+}
