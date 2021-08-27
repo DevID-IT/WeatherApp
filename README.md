@@ -1,6 +1,6 @@
-# TODO APP
+# Weather app
 
-Show a result: https://davidjr007.github.io/WeatherApp/
+Show a result: https://devid-it.github.io/WeatherApp/
 
 ## Table of contents
 
